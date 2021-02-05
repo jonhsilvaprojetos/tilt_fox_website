@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: url(../images/bg-principal.png);
+    background-size: cover;
+}
+
+.container {
+    max-width: 1400px;
+}
+
+#principal_content{
+    height: 100vh;
+}
+
+
+/*/ CABECALHO /*/
+
+header {
+    padding: 40px 0px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    max-width: 79px;
+    margin-right: 30px;
+}
+
+header .logo img {
+    max-width: 100%;
+}
+
+
+/*/ MENU /*/
+header .menu_principal {
+    display: flex;
+    align-items: center;
+}
+
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+header .menu_principal nav ul li {
+    display: flex;
+}
+
+
+header .menu_principal nav ul li:not(:last-child):after {
+    content: '.';
+    color: #c8c8d4;
+    font-size: 45px;
+    margin: 0 15px;
+    line-height: 6px;
+}
+
+header nav ul li a {
+    color: #c9c9d6;
+    text-decoration: none !important;
+}
+
+header .menu_secundario nav ul li a {
+    color: #ca682d;
+}
+
+header nav ul li a:hover {
+    color: #f67233;
+}
+
+
+/*/ CORPO /*/
+
+
+/*/ BANNER /*/
+
+
+/* dots */
+ul.slick-dots {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.slick-dots li button {
+    color: transparent;
+    width: 15px;
+    height: 15px;
+    border: none;
+    background: #c9c9d6;
+    border-radius: 50px;
+}
+
+ul.slick-dots li:not(:last-child) {
+    margin-right: 10px;
+}
+
+ul.slick-dots li.slick-active button {
+    background: #e56823;
+}
+
+
+
+/*/ FOOTER /*/
